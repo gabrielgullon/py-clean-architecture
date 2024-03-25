@@ -27,6 +27,17 @@ Check the .gitignore file and use it too!
 
 > Don't expose **_sensitive information_** to the public!
 
+Also:
+
+1. Check the `requirements.txt`;
+2. Use a virtual enviroment (`python -m venv /path-to-venv`);
+3. To use the same packages as I did, after creating the `venv`:
+
+- `path-to-venv/Scripts/activate`
+- `pip install -r <path-to-requirements.txt>`
+
+> **Notebook**: I use VS Code and its "native" notebook (Interactive). That's why you'll see `#%%` on some .py files, `#%%` creates a cell and I can run it on a Interactive window. It needs somethings installed in your vscode, but it's very easy to set it up.
+
 ## Benefits of this structure
 
 - Core is independent from outside layers: if we save the data on Excel or MySQL DB, our core **NEVER** changes
